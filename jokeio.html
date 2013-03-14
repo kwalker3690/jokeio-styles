@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Joke.io</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>  
+	<div id="header">
+		<div class="content">
+			<a class="logo" href="/"><img src='images/jokeio_logo_white.png' width=121 /></a>
+			<a class="browse" href="/browse">BROWSE</a>
+			<a class="submit button" href="/new">POST A JOKE</a>
+		
+			
+		
+		
+			<div class="account">
+	  		
+					<div class="user">
+	  				<a href="/account" class="name">Kelly</a>
+	  				<a href="/account" class="img">
+	  			  	<img src="https://s3.amazonaws.com/jokeio/83cff140-3323-4719-94e9-04a572108880.jpg" width="24" height="24" />
+	  				</a>
+						<ul class="dropdown">
+							<li><a href="/account">Account</a></li>
+							<li><a href="/settings">Settings</a></li>
+							<li><a href="/sign_out">Sign Out</a></li>
+						</ul>
+					</div>
+	  		
+			</div>
+			<form id="search" action="/search" method="get">
+				<input class="query" name="q" placeholder="Search" />
+			</form>
+		</div>
+	</div>
+	<div id="page">
+
+
+
+<div id="content">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/browse_2.css" />
+
+	
+
+  <div id="browse">
+		<div class="sidebar">
+			<div class="coming" style="width:160px;height:385px;display:none;">
+				<div class="label" style="font-size:45px;width:200px;margin-left:-89px">COMING SOON!</div>
+				<img src="/images/temp_joke_side.png" width="160" />
+			</div>
+			
+			<div class="popular">
+				<h2>TODAY'S MOST POPULAR</h2>
+				<ul id="popular_jokes">
+						<li class="joke" data-joke-id="51368cb24b3c4ff084000008">
+	<div class="img">
+		<img src="images/Dan_Schneider.jpg" />
+	</div>
+	<div class="author">
+		<div class="joke_name">
+		  <span>Fuck Bitches</span>
+			<button class="play"></button>
+		</div>
+		<div class="name">
+		  <a href="#">Dan Schneider</a>
+		</div>
+	</div>
+	<div class="rating">
+		<button class="beer" data-num="1">
+		  <div class="icon"></div>
+		  <span class="number">GIVE A BEER (108)</span>
+		</button>
+		<button class="tomato" data-num="0">
+		  <div class="icon"></div>
+		  <span class="number">THROW A TOMATO (70)</span>
+		</button>
+	</div>
+</li>
+    		
+    		  
+					
+
+    			<li class="joke" data-joke-id="513e75ae6fd4fb94aa000003">
+	<div class="img">
+		<img src="https://s3.amazonaws.com/jokeio/3ec5dec0-f541-425e-ad64-0ec506748f2b.jpg" />
+	</div>
+	<div class="author">
+		<div class="joke_name">
+		  <span>Straight Outta...</span>
+			<button class="play"></button>
+		</div>
+		<div class="name">
+		  <a href="/u/Mark-White">Dark Mark</a>
+		</div>
+		
+	</div>
+</li>
+    		
+    		  
+					
+
+    			<li class="joke" data-joke-id="512fc3fb3b0ee5b12a000022">
+	<div class="img">
+		<img src="https://s3.amazonaws.com/jokeio/Vinnie_Copola.jpg" />
+	</div>
+	<div class="author">
+		<div class="joke_name">
+		  <span>Laundromats</span>
+			<button class="play"></button>
+		</div>
+		<div class="name">
+		  <a href="/u/Vinnie-Coppola">Vinnie Coppola</a>
+		</div>
+		
+	</div>
+	</li>
+	<div class="clear"></div>
+	</ul>
+			</div>
+			
+			<div class="recommended">
+				<h2>RECOMMENDED COMEDIANS</h2>
+				<ul id="recommended_comedians">
+				<li class="user" data-user-id="5122c0a57b60590200000003">
+	<div class="img">
+		<img src="https://s3.amazonaws.com/jokeio/Vinnie_Copola.jpg">
+	</div>
+	<div class="author">
+		<div class="name">
+		  <a href="/u/Vinnie-Coppola">Vinnie Coppola</a>
+		</div>
+	</div>
+</li>
+<li class="user" data-user-id="5121ee011690c70200000029">
+	<div class="img">
+		<img src="https://s3.amazonaws.com/jokeio/Perry_Kurtz.jpg">
+	</div>
+	<div class="author">
+		<div class="name">
+		  <a href="/u/Perry-Kurtz">Perry Kurtz</a>
+		</div>
+	</div>
+</li>
+<li class="user" data-user-id="5121ead71690c70200000020">
+	<div class="img">
+		<img src="https://s3.amazonaws.com/jokeio/Nate_Craig.jpg">
+	</div>
+	<div class="author">
+		<div class="name">
+		  <a href="/u/nate-craig">nate craig</a>
+		</div>
+	</div>
+</li>
+				</ul>
+			</div>
+			
+			<div class="tags">
+				<h2>TAGS</h2>
+				<div id="tag_cloud">
+<a class="button" href="/browse/funny">funny</a>
+
+<a class="button" href="/browse/open%20mic">open mic</a>
+
+<a class="button" href="/browse/doug%20driesel%20jr.">doug driesel jr.</a>
+
+<a class="button" href="/browse/my%20name%20is%20dave">my name is dave</a>
+
+<a class="button" href="/browse/comedy">comedy</a>
+
+<a class="button" href="/browse/universal%20bar%20and%20grill">universal bar and grill</a>
+
+<a class="button" href="/browse/perry%20kurtz">perry kurtz</a>
+
+<a class="button" href="/browse/sketch">sketch</a>
+
+<a class="button" href="/browse/stanford%20and%20sons">stanford and sons</a>
+
+<a class="button" href="/browse/comedian">comedian</a>
+</div>
+			</div>
+		</div>
+		
+		<div class="stream">
+			
+				<h2>JOKE STREAM</h2>
+			
+			<ul class="joke_list">
+    	  
+    		
+    		  
+					
+
+    			<li class="joke" data-joke-id="512fbef1352ac4b27500001f">
+	<div class="img">
+		<img src="images/Vinnie_Copola.jpg" />
+	</div>
+	<div class="author">
+		<div class="joke_name">
+		  <span>DMV</span>
+			<button class="play"></button>
+		</div>
+		<div class="name">
+		  <a href="#">Vinnie Coppola</a>
+		</div>
+		<div class="tags">
+			
+			
+				<a class="button" href="#">Waiting</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Stand Up</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Patience</a>
+				
+			
+		</div>
+	</div>
+	<div class="rating">
+		<button class="beer" data-num="8">
+		  <div class="icon"></div>
+		  <span class="number">GIVE A BEER (89)</span>
+		</button>
+		<button class="tomato" data-num="0">
+		  <div class="icon"></div>
+		  <span class="number">THROW A TOMATO (20)</span>
+		</button>
+	</div>
+</li>
+    		
+    		  
+					
+
+    			<li class="joke" data-joke-id="5133da1abce77a2723000010">
+	<div class="img">
+		<img src="images/Chad_Ridgely.jpg" />
+	</div>
+	<div class="author">
+		<div class="joke_name">
+		  <span>Feeling Old</span>
+			<button class="play"></button>
+		</div>
+		<div class="name">
+		  <a href="#">Chad Ridgely</a>
+		</div>
+		<div class="tags">
+			
+			
+				<a class="button" href="#">Old</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Comedy</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Elderly</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Grandpa</a>
+				
+			
+		</div>
+	</div>
+	<div class="rating">
+		<button class="beer" data-num="3">
+		  <div class="icon"></div>
+		  <span class="number">GIVE A BEER (38)</span>
+		</button>
+		<button class="tomato" data-num="0">
+		  <div class="icon"></div>
+		  <span class="number">THROW A TOMATO (21)</span>
+		</button>
+	</div>
+</li>
+    		
+    		  
+					
+
+    			<li class="joke" data-joke-id="5133dc29e730f80000000014">
+	<div class="img">
+		<img src="images/Jesse_Sanchez_Jr.JPG" />
+	</div>
+	<div class="author">
+		<div class="joke_name">
+		  <span>Fucking Hilarious</span>
+			<button class="play"></button>
+		</div>
+		<div class="name">
+		  <a href="#">Jesse Sanchez Jr.</a>
+		</div>
+		<div class="tags">
+			
+			
+				<a class="button" href="#">Funny</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Sketch</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Improv</a>
+				
+			
+		</div>
+	</div>
+	<div class="rating">
+		<button class="beer" data-num="1">
+		  <div class="icon"></div>
+		  <span class="number">GIVE A BEER (10)</span>
+		</button>
+		<button class="tomato" data-num="0">
+		  <div class="icon"></div>
+		  <span class="number">THROW A TOMATO (90)</span>
+		</button>
+	</div>
+</li>
+    		
+    		  
+					
+
+    			<li class="joke" data-joke-id="513647a7e5a8114003000001">
+	<div class="img">
+		<img src="images/Perry_Kurtz.jpg" />
+	</div>
+	<div class="author">
+		<div class="joke_name">
+		  <span>Perry Kurtz at Liquid Zoo</span>
+			<button class="play"></button>
+		</div>
+		<div class="name">
+		  <a href="#">Perry Kurtz</a>
+		</div>
+		<div class="tags">
+			
+			
+				<a class="button" href="#">Stand Up</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Open Mic</a>
+				
+			
+		</div>
+	</div>
+	<div class="rating">
+		<button class="beer" data-num="1">
+		  <div class="icon"></div>
+		  <span class="number">GIVE A BEER (1)</span>
+		</button>
+		<button class="tomato" data-num="0">
+		  <div class="icon"></div>
+		  <span class="number">THROW A TOMATO (0)</span>
+		</button>
+	</div>
+</li>
+    		
+    		  
+					
+
+    			<li class="joke" data-joke-id="51364996e5a8114003000010">
+	<div class="img">
+		<img src="images/Kevin_Lalka.jpg" />
+	</div>
+	<div class="author">
+		<div class="joke_name">
+		  <span>Brought to you by...</span>
+			<button class="play"></button>
+		</div>
+		<div class="name">
+		  <a href="#">Kevin Lalka</a>
+		</div>
+		<div class="tags">
+			
+			
+				<a class="button" href="#">Special</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Album</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Advertising</a>
+				
+			
+		</div>
+	</div>
+	<div class="rating">
+		<button class="beer" data-num="1">
+		  <div class="icon"></div>
+		  <span class="number">GIVE A BEER (102)</span>
+		</button>
+		<button class="tomato" data-num="0">
+		  <div class="icon"></div>
+		  <span class="number">THROW A TOMATO (43)</span>
+		</button>
+	</div>
+</li>
+    		
+    		  
+					
+
+    			<li class="joke" data-joke-id="51368cb24b3c4ff084000008">
+	<div class="img">
+		<img src="images/Dan_Schneider.jpg" />
+	</div>
+	<div class="author">
+		<div class="joke_name">
+		  <span>Fuck Bitches</span>
+			<button class="play"></button>
+		</div>
+		<div class="name">
+		  <a href="#">Dan Schneider</a>
+		</div>
+		<div class="tags">
+			
+			
+				<a class="button" href="#">Stand Up</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Comedy</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Hilarious</a>
+				
+				 / 
+				
+			
+				<a class="button" href="#">Sketch</a>
+				
+			
+		</div>
+	</div>
+	<div class="rating">
+		<button class="beer" data-num="1">
+		  <div class="icon"></div>
+		  <span class="number">GIVE A BEER (108)</span>
+		</button>
+		<button class="tomato" data-num="0">
+		  <div class="icon"></div>
+		  <span class="number">THROW A TOMATO (70)</span>
+		</button>
+	</div>
+</li>
+    		
+    		  
+					
+
+    			<li class="joke" data-joke-id="513e75ae6fd4fb94aa000003">
+	<div class="img">
+		<img src="https://s3.amazonaws.com/jokeio/3ec5dec0-f541-425e-ad64-0ec506748f2b.jpg" />
+	</div>
+	<div class="author">
+		<div class="joke_name">
+		  <span>Straight Outta Transylvania</span>
+			<button class="play"></button>
+		</div>
+		<div class="name">
+		  <a href="/u/Mark-White">Dark Mark</a>
+		</div>
+		<div class="tags">
+			
+			
+				<a class="button" href="/browse/Goth">Goth</a>
+				
+				 / 
+				
+			
+				<a class="button" href="/browse/Dark">Dark</a>
+				
+				 / 
+				
+			
+				<a class="button" href="/browse/Weird">Weird</a>
+				
+				 / 
+				
+			
+				<a class="button" href="/browse/Creepy">Creepy</a>
+				
+				 / 
+				
+			
+				<a class="button" href="/browse/Alternative">Alternative</a>
+				
+			
+		</div>
+	</div>
+	<div class="rating">
+		<button class="beer" data-num="1">
+		  <div class="icon"></div>
+		  <span class="number">GIVE A BEER (1)</span>
+		</button>
+		<button class="tomato" data-num="0">
+		  <div class="icon"></div>
+		  <span class="number">THROW A TOMATO (0)</span>
+		</button>
+	</div>
+</li>
+    		
+    		  
+					
+
+    			<li class="joke" data-joke-id="512fc3fb3b0ee5b12a000022">
+	<div class="img">
+		<img src="https://s3.amazonaws.com/jokeio/Vinnie_Copola.jpg" />
+	</div>
+	<div class="author">
+		<div class="joke_name">
+		  <span>Laundromats</span>
+			<button class="play"></button>
+		</div>
+		<div class="name">
+		  <a href="/u/Vinnie-Coppola">Vinnie Coppola</a>
+		</div>
+		<div class="tags">
+			
+			
+		</div>
+	</div>
+	<div class="rating">
+		<button class="beer" data-num="8">
+		  <div class="icon"></div>
+		  <span class="number">GIVE A BEER (8)</span>
+		</button>
+		<button class="tomato" data-num="1">
+		  <div class="icon"></div>
+		  <span class="number">THROW A TOMATO (1)</span>
+		</button>
+	</div>
+</li>
+    		
+    		  
+					
+
+ 
+		</div>
+  	<div class="clear"></div>
+  	
+  	<div class="pagination">
+      
+        
+        
+          <span class="current page">1</span>
+        
+      
+        
+        
+          <a class="page" href="?p=2">2</a>
+        
+      
+        
+        
+          <a class="page" href="?p=3">3</a>
+        
+      
+        
+        
+          <a class="page" href="?p=4">4</a>
+        
+      
+        
+        
+          <a class="page" href="?p=5">5</a>
+        
+      
+        
+        
+          <a class="page" href="?p=6">6</a>
+        
+      
+        
+        
+          <a class="page" href="?p=7">7</a>
+        
+      
+        
+        
+          <a class="page" href="?p=8">8</a>
+        
+      
+        
+        
+          <a class="page" href="?p=9">9</a>
+        
+      
+        
+        
+          <a class="page" href="?p=10">10</a>
+        
+      
+        
+        
+          <a class="page" href="?p=11">11</a>
+        
+      
+    </div>
+  </div>
+  
+</div>
+
+
+	</div>
+	<div id="player">
+  <div class="controls">
+		<div class="buttons">
+			<button class="play"></button>
+			<button class="forward"></button>
+		</div>
+		
+		<div class="current_joke">
+		  
+			<div class="author">
+				<a class="img" href="#" width="36" height="36">
+				  <img src="images/Ed_Galvez.jpg" />
+				</a>
+				<span>
+				  <a class="joke" href="#">Bitches Love Cake</a>
+				  &nbsp;-&nbsp;
+				  <a class="name" href="#">Ed Galvez</a>
+				</span>
+			</div>
+			<div class="track" style="display:none">
+				<div class="fill">
+					<div class="left_side"></div>
+				</div>
+			</div>
+			<div class="timer">
+				<span class="current">0:00</span> / <span class="total">3:45</span>
+			</div>
+		</div>
+		
+			<button class="action beer"></button>
+			<button class="action tomato"></button>
+			<button class="action share"></button>
+			<button class="action list"></button>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
