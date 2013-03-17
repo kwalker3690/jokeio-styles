@@ -449,11 +449,11 @@ button.following {
   padding:20px 0 50px 0;
 }
 
-#browse {
+  {
   padding-bottom:100px;
 }
 
-#browse .sidebar {
+  .sidebar {
   width:210px;
   padding-right:20px;
   border-right:19px;
@@ -462,22 +462,22 @@ button.following {
   float:left;
 }
 
-#browse .stream {
+  .stream {
   width:660px;
   float:left;
 }
 
-#browse .stream .img {
+  .stream .img {
   width:130px;
   height:130px;
   margin:0 5px 10px 0;
 }
 
-#browse .stream .img img {
+  .stream .img img {
   width:130px;
 }
 
-#browse .stream h2 .button {
+  .stream h2 .button {
   background:#f1f3f6;
   padding:6px 7px 5px 7px;
   display:inline-block;
@@ -487,25 +487,25 @@ button.following {
   margin-left:7px;
 }
 
-#browse .stream h2 .button span {
+  .stream h2 .button span {
   text-transform:uppercase;
   color:#888;
 }
 
-#browse li.joke {
+  li.joke {
   clear:left;
   border-bottom:1px solid #f2f2f2;
   margin-bottom:20px;
   height:135px;
 }
 
-#browse li.joke .author {
+  li.joke .author {
   background:#f1f3f6;
   float:left;
   width:505px;
 }
 
-#browse li.joke .author .joke_name {
+  li.joke .author .joke_name {
 font-family:"neusa_boldregular", arial;
 -webkit-font-smoothing: antialiased;
 text-transform:uppercase;
@@ -513,33 +513,33 @@ text-transform:uppercase;
 
 }
 
-#browse li.joke .author .name {
+  li.joke .author .name {
   padding-bottom:6px;
 
 }
 
-#browse ul.joke_list .name{
+  ul.joke_list .name{
     padding-top:6px;
     }
 
-#browse li.joke .tags {
+  li.joke .tags {
   font-family:"neusa_boldregular", arial;
   font-size:13px;
   text-transform:uppercase;
   padding:4px 0;
 }
 
-#browse li.joke .tags a {
+  li.joke .tags a {
   padding:0;
   background:transparent;
   color:#7b7b7b;
 }
 
-#browse li.joke .tags a:hover {
+  li.joke .tags a:hover {
   color:#ff1400;
 }
 
-#browse li.joke .rating {
+  li.joke .rating {
   position:relative;
   left:auto;
   top:auto;
@@ -592,63 +592,65 @@ li.joke .rating button span {
   top:2px;
 }
 
-#browse .pagination {
+  .pagination {
   text-align: center;
   width: 100%;
   margin-top: 8px;
 }
 
-#browse .pagination .page {
+  .pagination .page {
   padding: 10px;
 }
 
-#browse .pagination .current.page {
+  .pagination .current.page {
   color: #ff5526;
   font-family:"opensans_bold", arial;
 }
 
-#browse #popular_jokes {
+  #popular_jokes {
   border-bottom:1px solid #f2f2f2;
   margin-bottom:30px;
 }
 
-#browse #popular_jokes li.joke {
+  #popular_jokes li.joke {
   height:auto;
 }
 
-#browse #popular_jokes li.joke .img {
+  #popular_jokes li.joke .img {
+  position:relative;
   width:50px;
   height:50px;
 }
 
-#browse #popular_jokes li.joke .img img {
+  #popular_jokes li.joke .img img {
+  margin-top:6px;
   width:40px;
 }
 
-#browse #popular_jokes li.joke .author {
+  #popular_jokes li.joke .author {
   background:transparent;
   height:auto;
   width:auto;
   padding:10px 0 0 0;
 }
 
-#browse #popular_jokes li.joke .author .name a{
+  #popular_jokes li.joke .author .name a{
 
   font-family:"opensans_regular", arial;
   font-size:12px;
 }
 
-#browse #popular_jokes li.joke .joke_name {
+  #popular_jokes li.joke .joke_name {
   font-family: "opensans_bold",arial;
   text-transform:capitalize;
   font-size:14px;
 }
 
-#browse #popular_jokes li.joke .joke_name span{
+  #popular_jokes li.joke .joke_name span{
   padding-bottom:4px;
   }
 
-#browse #popular_jokes li.joke .joke_name .play {
+  #popular_jokes li.joke .joke_name .play {
   width:16px;
   height:16px;
   background-position:-40px -240px;
@@ -656,25 +658,25 @@ li.joke .rating button span {
   top:-2px;
 }
 
-#browse #popular_jokes li.joke .joke_name .play:hover {
+  #popular_jokes li.joke .joke_name .play:hover {
   background-position:-40px -260px;
 }
 
-#browse #popular_jokes li.joke .joke_name .play:active {
+  #popular_jokes li.joke .joke_name .play:active {
   background-position:-40px -280px;
 }
 
-#browse #popular_jokes li.joke .tags,
-#browse #popular_jokes li.joke .rating {
+  #popular_jokes li.joke .tags,
+  #popular_jokes li.joke .rating {
   display:none;
 }
 
-#browse #recommended_comedians {
+  #recommended_comedians {
   border-bottom:1px solid #f2f2f2;
   margin-bottom:30px;
 }
 
-#browse #recommended_comedians li.user {
+  #recommended_comedians li.user {
   border-top:1px solid #f2f2f2;
   padding:7px;
   clear:left;
@@ -682,25 +684,25 @@ li.joke .rating button span {
   margin-bottom:7px;
 }
 
-#browse #recommended_comedians li.user .img {
+  #recommended_comedians li.user .img {
   width:30px;
   height:30px;
   float:left;
   margin-right:10px;
 }
 
-#browse #recommended_comedians li.user .img img {
+  #recommended_comedians li.user .img img {
   width:30px;
 }
 
-#browse #recommended_comedians li.user .author {
+  #recommended_comedians li.user .author {
   font-family: "helvetica neue LT pro",arial;
   font-size: 13px;
   padding-top:10px;
   text-transform:capitalize;
 }
 
-#browse #tag_cloud a {
+  #tag_cloud a {
   background: #f1f3f6;
   border: 1px solid #e3e5e8;
   color:#858585;
@@ -714,7 +716,7 @@ li.joke .rating button span {
   text-transform:uppercase;
 }
 
-#browse #tag_cloud a:hover{
+  #tag_cloud a:hover{
 text-decoration:none;
   -webkit-box-shadow: inset 0px -1px 2px #e4e6e8;
 box-shadow: inset 0px -1px 2px #e4e6e8;
@@ -731,7 +733,7 @@ background: linear-gradient(to bottom,  #ffffff 0%,#f1f3f6 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f3f6',GradientType=0 ); /* IE6-9 */
 }
 
-#browse #tag_cloud a:active{
+  #tag_cloud a:active{
  text-decoration:none;
   -webkit-box-shadow: inset 0px 1px 2px #e4e6e8;
 box-shadow: inset 0px 1px 2px #e4e6e8;
@@ -764,21 +766,12 @@ li.joke .author .name {
   clear:left;
 }
 
-li.joke {
-  border-bottom:1px solid #e9e9e9;
-  height:45px;
-  position:relative;
-}
-
 li.joke img {
   width:50px;
 }
 
 li.joke .img {
   float:left;
-  margin:7px 0px 0 7px;
-  width:50px;
-  height:50px;
   position:relative;
   overflow:hidden;
 }
@@ -1237,6 +1230,19 @@ background-position:-140px -540px;
   padding-bottom:100px;
 }
 
+#profile .stream{
+	width:630px;
+	float:left;
+	}
+
+#profile .stream .img{
+	display:none;
+	}
+
+#profile li.joke .author{
+	width:610px;
+	}
+
 #profile .user {
   width:244px;
   float:left;
@@ -1433,7 +1439,7 @@ background:#6f239d;
   background-position:0px -760px;
 }
 
-#profile .joke_list {
+/*#profile .joke_list {
   float:left;
   width:630px;
 }
