@@ -360,12 +360,12 @@ button:hover {
 .orange_button {
   background:#ff4100;
   color:#fff;
-  padding:15px 15px 10px 15px;
+  padding:10px 15px 10px 15px;
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
   border-radius:4px;
-  font-weight:600;
   font-size:13px;
+  border:1px solid #ff4100;
 }
 
 button.follow,
@@ -381,8 +381,32 @@ button.following {
 }
 
 .orange_button:hover {
-  background:#ff5b00;
+  background: #fd7428; /* Old browsers */
+background: -moz-linear-gradient(top,  #fd7428 0%, #ff4100 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fd7428), color-stop(100%,#ff4100)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fd7428 0%,#ff4100 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fd7428 0%,#ff4100 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fd7428 0%,#ff4100 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fd7428 0%,#ff4100 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd7428', endColorstr='#ff4100',GradientType=0 ); /* IE6-9 */
+border:1px solid #ff4100;
   text-decoration:none;
+  color:#fff;
+}
+
+.orange_button:active {
+ background: #ff4100; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff4100 0%, #fd7428 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4100), color-stop(100%,#fd7428)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff4100 0%,#fd7428 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff4100 0%,#fd7428 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff4100 0%,#fd7428 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ff4100 0%,#fd7428 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4100', endColorstr='#fd7428',GradientType=0 ); /* IE6-9 */
+
+border:1px solid #ff4100;
+  text-decoration:none;
+  color:#fff;
 }
 
 #page {
@@ -1360,6 +1384,31 @@ background:#6f239d;
   float:right;
   padding:5px 0;
   width:124px;
+  border:1px solid #6f239d
+}
+
+#profile .stats .followers button:hover {
+background: #9531d2; /* Old browsers */
+background: -moz-linear-gradient(top,  #9531d2 0%, #4e1472 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9531d2), color-stop(100%,#4e1472)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #9531d2 0%,#4e1472 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #9531d2 0%,#4e1472 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #9531d2 0%,#4e1472 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #9531d2 0%,#4e1472 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9531d2', endColorstr='#4e1472',GradientType=0 ); /* IE6-9 */
+border:1px solid #4e1472
+}
+
+#profile .stats .followers button:active {
+background: #4e1472; /* Old browsers */
+background: -moz-linear-gradient(top,  #4e1472 0%, #9531d2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4e1472), color-stop(100%,#9531d2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #4e1472 0%,#9531d2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #4e1472 0%,#9531d2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #4e1472 0%,#9531d2 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #4e1472 0%,#9531d2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e1472', endColorstr='#9531d2',GradientType=0 ); /* IE6-9 */
+border:1px solid #4e1472
 }
 
 #profile .stats .followers .icon {
@@ -1536,6 +1585,13 @@ background:#6f239d;
   background-position:-24px -432px;
 }*/
 
+#profile h3{
+	padding:20px 0 5px 0 ;
+	border-bottom:1px solid #eeeeee;
+	margin-bottom:10px;
+	width:221px;
+	}
+
 #profile .bio {
   font-size:14px;
   line-height:17px;
@@ -1543,11 +1599,14 @@ background:#6f239d;
 }
 
 #profile .hire_me {
-  padding:0 0 15px 0;
+	margin-top:10px;
+  padding:10px 0 0 0;
+  border-top:1px solid #eeeeee;
+  width:221px;
 }
 
 #profile .hire_me a {
-  width:191px;
+  width:189px;
   text-align:center;
   display:block;
 }
