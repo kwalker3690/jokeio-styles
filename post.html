@@ -1,0 +1,144 @@
+
+
+  
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Submit a joke</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>  
+	<div id="header">
+		<div class="content">
+			<a class="logo" class="trickster" href="/"><img src='images/jokeio_logo_white.png' width=121 /></a>
+			<a class="browse" href="/browse">BROWSE</a>
+			<a class="submit button" href="/new">POST A JOKE</a>
+		
+			<form id="search" action="/search" method="get">
+				<input class="query" name="q" placeholder="Search" />
+			</form>
+		
+			<button id="alerts"></button>
+		
+			<div class="account">
+	  		
+					<div class="user">
+	  				<a href="/account" class="name">Kelly</a>
+	  				<a href="/account" class="img">
+	  			  	<img src="https://s3.amazonaws.com/jokeio/83cff140-3323-4719-94e9-04a572108880.jpg" width="24" height="24" />
+	  				</a>
+						<ul class="dropdown">
+							<li><a href="/account">Account</a></li>
+							<li><a href="/settings">Settings</a></li>
+							<li><a href="/sign_out">Sign Out</a></li>
+						</ul>
+					</div>
+	  		
+			</div>
+		</div>
+	</div>
+	<div id="page">
+
+
+
+
+  <div class="flash_list">
+    
+  </div>
+
+
+  
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/joke_new.css" />
+<script type="text/javascript" src="/javascripts/recorder.js"></script>
+<script type="text/javascript" src="/javascripts/recorder_setup.js"></script>
+
+<div id="joke_new">
+  <div class="loading">
+	  <img src="/images/preloader.gif" />
+	</div>
+  
+	<h2>SUBMIT A JOKE</h2>
+	
+	<form action="/jokes" method="post" enctype="multipart/form-data">
+		<div id="record">
+		
+		  <div class="option input">
+		  <h3>Record it</h3>
+  			<button class="reset"></button>
+  			<button class="record action">Rec</button>
+  			<div class="timer">0:00</div>
+    
+        <audio></audio>
+        <input type="file" style="display:none;" name="recording" />
+      </div>
+
+          
+      <div class="option joke_url">
+      <h3>Link it</h3>
+				<input class="url text" name="url" placeholder="Joke URL" />
+				<div>
+					<strong>Give a URL.</strong>
+					<p>MP3s, WAVE, AIFF, FLAG, OGG, WMV files are all cool.</p>
+				</div>
+			</div>
+			
+
+			<div class="option joke_file">
+			<h3>Upload it</h3>
+				<input id="file_upload_joke" type="file" name="file" class="file" placeholder="Joke File" />
+				<div class="fakefile">
+					<button class="orange_button">Upload File</button>
+					<input class="text" disabled />
+				</div>
+			</div>
+		  
+		</div>
+		
+		<div class="clear"></div>
+		
+		<h3 class="title">Add a Title</h3>
+		<input name="title" class="text title" placeholder="Joke Title" />
+		
+		<h3>Choose Tags</h3>
+		
+		<div>
+  		<input id="check_nsfw" type="checkbox" name="nsfw" value="false" />
+  		<label for="check_nsfw">NSFW</label>
+		</div>
+		
+		<div class="tags">
+			<input id="tag_maker" class="text" name="tags" placeholder="Add a tag" />
+			<div>Separate tags with commas.</div>
+		</div>
+		
+		<div class="submit_button">
+			<button class="orange_button submit" type="submit">POST</button>
+		</div>
+	</form>
+</div>
+
+<div id="mic_fail" style="display:none">
+	<button class="close"></button>
+	<h2>OH NO! YOUR MIC CHECK FAILED</h2>
+	
+	<ul>
+		<li>Please try the following to fix your mic:</li>
+		<li>1) Open a new browser tab/window.</li>
+		<li>2) Go to the following url: chrome://flags</li>
+		<li>3) Find the section labeled "Web Audio Input". It should be near the bottom.</li>
+		<li>4) Click the "Enable" link in that section.</li>
+		<li>5) Scroll to the bottom of the page and click the button labeled "Relaunch Now".</li>
+		<li>6) Try recording your joke.</li>
+	</ul>
+</div>
+
+
+
+  </body>
+</html>
+

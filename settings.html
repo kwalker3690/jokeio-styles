@@ -1,0 +1,174 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Jokeio Profile</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>  
+	<div id="header">
+		<div class="content">
+			<a class="logo" class="trickster" href="/"><img src='images/jokeio_logo_white.png' width=121 /></a>
+			<a class="browse" href="/browse">BROWSE</a>
+			<a class="submit button" href="/new">POST A JOKE</a>
+		
+			<form id="search" action="/search" method="get">
+				<input class="query" name="q" placeholder="Search" />
+			</form>
+		
+			<button id="alerts"></button>
+		
+			<div class="account">
+	  		
+					<div class="user">
+	  				<a href="/account" class="name">Kelly Walker</a>
+	  				<a href="/account" class="img">
+	  			  	<img src="https://s3.amazonaws.com/jokeio/83cff140-3323-4719-94e9-04a572108880.jpg" width="24" height="24" />
+	  				</a>
+						<ul class="dropdown">
+							<li><a href="/account">Account</a></li>
+							<li><a href="/settings">Settings</a></li>
+							<li><a href="/sign_out">Sign Out</a></li>
+						</ul>
+					</div>
+	  		
+			</div>
+		</div>
+	</div>
+	<div id="page">
+
+
+
+
+
+<div id="content">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/profile.css" />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/account.css" />
+
+	<div id="profile">
+
+		<div class="edit">
+			<form action="/settings" method="post" enctype="multipart/form-data">
+				<div>
+					<label>&nbsp;</label>
+					<h2>Settings</h2>
+				</div>
+				<div>
+					<label>Your public URL</label>
+					<a class="vanity" href="/u/Kelly">http://joke.io/u/Kelly</a>
+				</div>
+				<div>
+					<label>Name</label>
+					<input  type="text" name="user[stageName]" maxlength="10" value="Kelly" />
+				</div>
+				<div>
+					<label>Email</label>
+					<input type="text" name="user[email]" value="walkerkellywalker@gmail.com" />
+				</div>
+				<div>
+					<label>Title</label>
+					<input type="text" name="user[title]" value="" />
+				</div>
+				<div>
+					<label>Location</label>
+					<input type="text" name="user[location]" value="San Francisco, CA" />
+				</div>
+				<div>
+					<label>Website</label>
+					<input type="text" name="user[websiteUrl]" value="kellywalkercomedy.com" />
+				</div>
+				<div>
+					<label>Twitter</label>
+					<input type="text" name="user[twitter]" value="kwalker3690" />
+				</div>
+				
+				<div class="photo">
+					<label>Photo
+					<span>(image must be less than 50kb)</span></label>
+					<div class="img_wrap">
+						<div class="img">
+							<img src="https://s3.amazonaws.com/jokeio/83cff140-3323-4719-94e9-04a572108880.jpg" />
+						</div>
+						<label for="imageUpload" class="button">CHANGE</label>
+							<input type="file" name="imageUrl" id="imageUpload" />
+						
+						<div id="imageUploadStatus"></div>
+					</div>
+				</div>
+				
+				<div class="about">
+					<label>About Me</label>
+					<textarea name="user[about]">I am Product Manager at Jokeio, you all are much funnier than I!</textarea>
+				</div>
+				
+				<div class="hire">
+					<label>&nbsp;</label>
+					<input type="checkbox" name="hire" checked /> <span><strong>Available for hire?</strong> (shows your email to promoters)</span>
+				</div>
+				
+				<div>
+					<label>&nbsp;</label>
+					<button type="submit" class="orange_button">SAVE CHANGES</button>
+				</div>
+			</form>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+
+	</div>
+		<div id="player">
+  <div class="controls">
+		<div class="buttons">
+			<button class="play"></button>
+			<button class="forward"></button>
+		</div>
+		
+		<div class="current_joke">
+		  
+			<div class="author">
+				<a class="img" href="#" width="36" height="36">
+				  <img src="images/Ed_Galvez.jpg" />
+				</a>
+				<span>
+				  <a class="joke" href="#">Bitches Love Cake</a>
+				  &nbsp;-&nbsp;
+				  <a class="name" href="#">Ed Galvez</a>
+				</span>
+			</div>
+			<div class="track" style="display:none">
+				<div class="fill">
+					<div class="left_side"></div>
+				</div>
+			</div>
+			<div class="timer">
+				<span class="current">0:00</span> / <span class="total">3:45</span>
+			</div>
+		</div>
+		
+			<button class="action beer"></button>
+			<button class="action tomato"></button>
+			<button class="action radio"></button>
+			<button class="action share"></button>
+			<button class="action list"></button>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+<script>
+	$("#imageUpload").on("change",function() {
+		var file = document.getElementById('imageUpload').files[0].name;
+		$('#imageUploadStatus').text(file);
+	});
+</script>
